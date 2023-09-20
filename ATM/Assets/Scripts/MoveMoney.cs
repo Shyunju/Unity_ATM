@@ -19,6 +19,7 @@ public class MoveMoney : MonoBehaviour
         {
             //popup
             popUp.SetActive(true);
+            inputTextMoney.text = "금액을 입력하세요​";
         }
         else
         {
@@ -37,6 +38,7 @@ public class MoveMoney : MonoBehaviour
         {
             //popup
             popUp.SetActive(true);
+            inputTextMoney.text = "금액을 입력하세요​";
         }
         else
         {
