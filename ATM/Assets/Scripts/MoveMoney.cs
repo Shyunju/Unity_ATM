@@ -25,8 +25,8 @@ public class MoveMoney : MonoBehaviour
         {
             currentMoney -= int.Parse(inputTextMoney.text);
             balanceMoney += int.Parse(inputTextMoney.text);
-            textCurrentMoney.text = currentMoney.ToString();
-            textBalanceMoney.text = balanceMoney.ToString();
+            textCurrentMoney.text = currentMoney.ToString("#,##0");
+            textBalanceMoney.text = balanceMoney.ToString("#,##0");
             inputTextMoney.text = "금액을 입력하세요​";
         }
         
@@ -44,8 +44,8 @@ public class MoveMoney : MonoBehaviour
         {
             currentMoney += int.Parse(inputTextMoney.text);
             balanceMoney -= int.Parse(inputTextMoney.text);
-            textCurrentMoney.text = currentMoney.ToString();
-            textBalanceMoney.text = balanceMoney.ToString() ;
+            textCurrentMoney.text = currentMoney.ToString("#,##0");
+            textBalanceMoney.text = balanceMoney.ToString("#,##0") ;
             inputTextMoney.text = "금액을 입력하세요​";
 
         }
