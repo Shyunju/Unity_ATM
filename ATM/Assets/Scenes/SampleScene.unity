@@ -4116,6 +4116,7 @@ GameObject:
   - component: {fileID: 664706226}
   - component: {fileID: 664706225}
   - component: {fileID: 664706224}
+  - component: {fileID: 664706227}
   m_Layer: 5
   m_Name: Cansle
   m_TagString: Untagged
@@ -4226,6 +4227,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664706222}
   m_CullTransparentMesh: 1
+--- !u!114 &664706227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664706222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef551acf8d7f34e85c86e348c7a8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: {fileID: 489274839}
+  close: {fileID: 1485702620}
 --- !u!1 &680874791
 GameObject:
   m_ObjectHideFlags: 0
@@ -8383,8 +8398,8 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -9971,17 +9986,17 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 5
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 5
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 0
+  m_CharacterLimit: 5
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -10147,8 +10162,8 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -11258,6 +11273,7 @@ GameObject:
   - component: {fileID: 1852399815}
   - component: {fileID: 1852399814}
   - component: {fileID: 1852399813}
+  - component: {fileID: 1852399816}
   m_Layer: 5
   m_Name: signUp
   m_TagString: Untagged
@@ -11329,7 +11345,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1852399814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1852399816}
+        m_TargetAssemblyTypeName: CanvasManager, Assembly-CSharp
+        m_MethodName: OpenCanvas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1852399814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11368,6 +11396,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852399811}
   m_CullTransparentMesh: 1
+--- !u!114 &1852399816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852399811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef551acf8d7f34e85c86e348c7a8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: {fileID: 1485702620}
+  close: {fileID: 489274839}
 --- !u!1 &1870704146
 GameObject:
   m_ObjectHideFlags: 0
