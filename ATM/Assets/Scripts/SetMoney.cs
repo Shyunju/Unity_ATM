@@ -11,6 +11,6 @@ public class SetMoney : MonoBehaviour
 
     public void Setting()
     {
-        textInputMoney.text = EventSystem.current.currentSelectedGameObject.name;
+        textInputMoney.text = EventSystem.current.currentSelectedGameObject.name;  //금액버튼 이름으로 inputfield 금액 설정
     }
 }

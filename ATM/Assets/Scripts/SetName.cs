@@ -10,6 +10,6 @@ public class SetName : MonoBehaviour
 
     public void SettingUserName()
     {
-        name.text = inputID.text;
+        name.text = inputID.text;    //입력한 아이디로 회원정보 이름 설정
     }
 }
